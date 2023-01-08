@@ -1,0 +1,13 @@
+{
+  "name": "project",
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
