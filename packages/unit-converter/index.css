@@ -41,6 +41,7 @@ header .h2 {
     border: none;
     margin: 0;
     text-align: center;
+    padding-left: 15px;
 }
 
 .btn {
@@ -63,6 +64,7 @@ header .h2 {
 
 .convert-results {
     margin: 30px auto;
+    max-width: 600px;
 }
 
 .convert-result-item {

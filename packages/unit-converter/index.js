@@ -63,12 +63,16 @@ domReady(function () {
     document.getElementById("btn-convert").addEventListener("click", function () {
         renderUnits()
     })
-    const unitsEl = document.getElementById("metric-value");
+    const metricBox = document.querySelector(".metric-box")
+    const unitsEl = document.getElementById("metric-value")
     unitsEl.value = units
     unitsEl.addEventListener("input", function () {
         if (unitsEl.value < 0) {
             unitsEl.value = 0
         }
+        let width = Math.max(117, 117 + (unitsEl.value.length - 2) * 50)
+        width = Math.min(window.innerWidth - 40, width);
+        metricBox.style.width = width.toString()
         units = unitsEl.value
         renderUnits()
     })
