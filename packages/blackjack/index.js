@@ -51,7 +51,7 @@ function renderGame() {
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
-    
+
     sumEl.textContent = "Sum: " + (sum ? sum : "")
     if (sum <= 0) {
         message = "Want to play a round?"
@@ -73,6 +73,11 @@ function newCard() {
         let card = getRandomCard()
         sum += card
         cards.push(card)
-        renderGame()        
+        renderGame()
     }
 }
+
+!(function () {
+    window.startGame = startGame;
+    window.newCard = newCard;
+})();

@@ -5,9 +5,7 @@ LIGHT: #F1FAEE
 AQUA: #A8DADC
 LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557
-
 */
-
 :root {
     /* CSS HEX */
     --blue-yonder: #4c72a8ff;
@@ -41,7 +39,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -80,7 +78,7 @@ img {
 }
 
 #activities-section {
-        
+
 }
 
 #activities-section .h3 {
@@ -134,14 +132,14 @@ img {
 
 .cards {
     display: flex;
-} 
+}
 
 .cards .card {
     margin: 0;
 }
 
 .cards .card img {
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 
 .cards-row {

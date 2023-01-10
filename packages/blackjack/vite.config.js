@@ -1,6 +1,3 @@
-import {defineConfig} from 'vite'
+import { useDefaultViteConfig } from '../packageConfig'
 
-
-export default defineConfig({
-	plugins: []	
-})
+export default useDefaultViteConfig('blackjack')

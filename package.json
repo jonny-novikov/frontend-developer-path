@@ -1,14 +1,18 @@
 {
   "name": "project",
-  "dependencies": {
-  },
   "devDependencies": {
+    "rimraf": "^3.0.2",
+    "run-z": "^1.10.1",
     "vite": "^4.0.4"
   },
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "run-z ./packages start",
+    "dev": "run-z ./packages dev",
+    "build": "run-z build:packages,build:bundle",
+    "build:clean": "run-z clean build",
+    "build:bundle": "run-z ./packages build",
+    "build:packages": "run-z --batch-parallel ./packages// build",
+    "clean": "rimraf ./packages/dist",
+    "preview": "run-z ./packages preview"
   }
 }

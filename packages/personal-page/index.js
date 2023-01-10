@@ -1,6 +1,3 @@
-// Challenge 2:
-// Replace the arguments below according to your preference.
-
 // space, scary, military, romantic, cowboy, fantasy, superhero
 favouriteMovieGenre("regular")
 
@@ -13,12 +10,6 @@ favouriteMode("dark")
 // sharp, soft, round
 favouriteEdgeStyle("round")
 
-
-
-////////////////////////////////////
-// IGONE THE CODE BELOW THIS LINE //
-////////////////////////////////////
-
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
 }
@@ -29,7 +20,7 @@ function favouriteEdgeStyle(style) {
 
 function favouriteMovieGenre(font) {
     if (font) {
-        setProp("--font", "var(--" + font + ")");    
+        setProp("--font", "var(--" + font + ")");
     }
 }
 
@@ -47,8 +38,7 @@ function favouriteFruit(theme) {
     if (theme === "navy") {
         setProp('--light', "#FEFBEA")
         setProp('--dark', "#27445C")
-    }
-    else if (theme === "pastel") {
+    } else if (theme === "pastel") {
         setProp('--light', "#f2f6c3")
         setProp('--dark', "#68c4af")
     } else if (theme === "muted") {
@@ -87,7 +77,7 @@ function favouriteFruit(theme) {
     } else  {
         setProp('--light', "#f5f5f5")
         setProp('--dark', "#222222")
-    } 
+    }
 }
 
 

@@ -1,6 +1,2 @@
-import {defineConfig} from 'vite'
-
-
-export default defineConfig({
-	plugins: []	
-})
+import { useDefaultViteConfig } from '../packageConfig'
+export default useDefaultViteConfig('hometown-page')
