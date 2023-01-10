@@ -5,29 +5,48 @@
 */
 
 let units = 20;
-
-function convertUnits () {
-
-}
+const converter = [
+    {
+        title: "Length (Meter/Feet)",
+        metric: "meters",
+        imperial: "feet",
+        multiplier: 3.281
+    },
+    {
+        title: "Volume (Liters/Gallons)",
+        metric: "liters",
+        imperial: "gallons",
+        multiplier: 0.264
+    },
+    {
+        title: "Mass (Kilograms/Pounds)",
+        metric: "kilograms",
+        imperial: "pounds",
+        multiplier: 3.281
+    }
+]
 
 function renderUnits () {
-    const items = document.querySelectorAll(".convert-result-item .text");
+    const resultsEl = document.querySelector(".convert-results");
     const unitsToConvert = units || 1
-    if (items.length === 3) {
-        const meters = (unitsToConvert / 3.281).toFixed(3)
-        const feets = (unitsToConvert * 3.281).toFixed(3)
-        items[0].innerText = `${unitsToConvert} meters = ${feets} feet | ${unitsToConvert} feet = ${meters} meters`
+    let resultsHtml = ""
+    converter.forEach(function (unit) {
+        const srcValue = (unitsToConvert / unit.multiplier).toFixed(3)
+        const targetValue = (unitsToConvert * unit.multiplier).toFixed(3)
+        const text =
+            `${unitsToConvert} ${unit.metric} = ${targetValue} ${unit.imperial} | ` +
+            `${unitsToConvert} ${unit.imperial} = ${srcValue} ${unit.metric}`
 
-        const liter = (unitsToConvert / 0.264).toFixed(3)
-        const gallons = (unitsToConvert * 0.264).toFixed(3)
-        items[1].innerText = `${unitsToConvert} liters = ${gallons} gallons | ${unitsToConvert} gallons = ${liter} liters`
-
-        const kilograms = (unitsToConvert / 2.204).toFixed(3)
-        const pounds = (unitsToConvert * 2.204).toFixed(3)
-        items[2].innerText = `${unitsToConvert} kilograms = ${pounds} pounds | ${unitsToConvert} pounds = ${kilograms} kilograms`
-    }
+        const itemHtml =
+            `<div class="convert-result-item">
+                    <h3 class="h3">${unit.title}</h3>
+                    <p class="text">${text}</p>
+            </div>
+        `
+        resultsHtml += itemHtml
+    })
+    resultsEl.innerHTML = resultsHtml;
 }
-
 
 function domReady (fn) {
     if (typeof fn !== 'function') {
