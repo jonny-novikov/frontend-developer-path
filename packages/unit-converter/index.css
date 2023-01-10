@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F4F4;
+}
+
+header {
+    display: block;
+    margin: 0;
+    background-color: #6943FF;
+    padding-bottom: 30px;
+}
+
+header .h2 {
+    margin: 0;
+    line-height: 32px;
+    padding: 30px 10px;
+    color: white;
+}
+
+.metric-box {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 117px;
+    height: 83px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+}
+
+.metric-box #metric-value {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    color: whitesmoke;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    margin: 0;
+    text-align: center;
+}
+
+.btn {
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #3D3D3D;
+    padding: 5px 15px;
+}
+
+#btn-convert {
+    margin-top: 30px;
+}
+
+.convert-results {
+    margin: 30px auto;
+}
+
+.convert-result-item {
+    min-height: 110px;
+    background-color: #FFFFFF;
+    margin: 30px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.convert-result-item .h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #5A537B;
+}
+
+.convert-result-item .text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #353535;
+}
