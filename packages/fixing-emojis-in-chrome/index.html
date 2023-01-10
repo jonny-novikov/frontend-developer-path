@@ -7,38 +7,39 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
 </head>
 <body>
-<h1>Fixing Emoji in Chrome</h1>
-<h2>Helping Chrome Display Emoji Inside <code>font-weight: bold</code></h2>
-<p>In Chrome you can use emoji inside HTML and it will usually work, unless it's displayed as bold text. Instead of
-    always checking to make sure that your emoji never show up inside of anything that has <code>font-weight:
-        bold;</code> applied to it you can use an emoji-embedding solution like this to avoid the problem entirely.</p>
-<p>
-    If you add a <code>data-emoji</code> attribute to a tag, and set either one single emoji or a string of text containing emoji as the value of that attribute, we can ensure that element always uses <code>font-weight:
+    <h1>Fixing Emoji in Chrome</h1>
+    <h2>Helping Chrome Display Emoji Inside <code>font-weight: bold</code></h2>
+    <p>In Chrome you can use emoji inside HTML and it will usually work, unless it's displayed as bold text. Instead of
+        always checking to make sure that your emoji never show up inside of anything that has <code>font-weight:
+            bold;</code> applied to it you can use an emoji-embedding solution like this to avoid the problem entirely.</p>
+    <p>
+        If you add a <code>data-emoji</code> attribute to a tag, and set either one single emoji or a string of text
+        containing emoji as the value of that attribute, we can ensure that element always uses <code>font-weight:
         normal</code> and then output the content from our custom <code>data-emoji</code> attribute as
-    <code>:before</code> content.
-</p>
-<p>
-    Format your HTML like this to insert a <i data-emoji=😀></i> smiling emoji
-</p>
-<pre><code class=html>&lt;i data-emoji="😀">&lt/i></code></pre>
-<p>And then make sure the following styles are present somewhere in your CSS:</p>
-<pre><code class=css>[data-emoji] {
-  font-style: normal;
-  font-weight: normal;
-}
-[data-emoji]:before {
-  content: attr(data-emoji);
-  margin-right: .125em;
-}</code></pre>
-<hr>
-<h2>With the fix (works in Chrome)</h2>
-<p><strong>Lorem<i data-emoji=😀></i>ipsum<i data-emoji=🏑></i>dolor<i data-emoji=🦁></i>sit<i data-emoji=💝></i>amet,<i
-        data-emoji=💜></i>consectetur<i data-emoji=🚲></i>adipisicing<i data-emoji=🇧🇹></i>elit,<i data-emoji=👒></i>sed<i
-        data-emoji=👙></i>do<i data-emoji=💩></i>eiusmod<i data-emoji=🔗></i>tempor<i data-emoji=➿></i>incididunt<i
-        data-emoji=🚧></i>talo.</strong></p>
-<h2>Without the fix (broken in Chrome)</h2>
-<p><strong>Lorem<span>😀</span>ipsum🏑dolor🦁sit💝amet,💜consectetur🚲adipisicing🇧🇹elit,👒sed👙do💩eiusmod🔗tempor➿incididunt.🚧talo.</strong>
-</p>
-<script src="index.js"></script>
+        <code>:before</code> content.
+    </p>
+    <p>
+        Format your HTML like this to insert a <i data-emoji=😀></i> smiling emoji
+    </p>
+    <pre><code class=html>&lt;i data-emoji="😀">&lt/i></code></pre>
+    <p>And then make sure the following styles are present somewhere in your CSS:</p>
+    <pre><code class=css>[data-emoji] {
+      font-style: normal;
+      font-weight: normal;
+    }
+    [data-emoji]:before {
+      content: attr(data-emoji);
+      margin-right: .125em;
+    }</code></pre>
+    <hr>
+    <h2>With the fix (works in Chrome)</h2>
+    <p><strong>Lorem<i data-emoji=😀></i>ipsum<i data-emoji=🏑></i>dolor<i data-emoji=🦁></i>sit<i data-emoji=💝></i>amet,<i
+            data-emoji=💜></i>consectetur<i data-emoji=🚲></i>adipisicing<i data-emoji=🇧🇹></i>elit,<i data-emoji=👒></i>sed<i
+            data-emoji=👙></i>do<i data-emoji=💩></i>eiusmod<i data-emoji=🔗></i>tempor<i data-emoji=➿></i>incididunt<i
+            data-emoji=🚧></i>talo.</strong></p>
+    <h2>Without the fix (broken in Chrome)</h2>
+    <p><strong>Lorem<span>😀</span>ipsum🏑dolor🦁sit💝amet,💜consectetur🚲adipisicing🇧🇹elit,👒sed👙do💩eiusmod🔗tempor➿incididunt.🚧talo.</strong>
+    </p>
+    <script src="index.js"></script>
 </body>
 </html>
