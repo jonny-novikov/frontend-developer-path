@@ -70,7 +70,7 @@ domReady(function () {
         if (unitsEl.value < 0) {
             unitsEl.value = 0
         }
-        let width = Math.max(117, 117 + (unitsEl.value.length - 2) * 50)
+        let width = Math.max(120, 120 + (unitsEl.value.length - 2) * 50)
         width = Math.min(window.innerWidth - 40, width);
         metricBox.style.width = width.toString()
         units = unitsEl.value
