@@ -9,7 +9,6 @@
     "babel-preset-react": "*"
   },
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w"
+    "build": "echo 'Skip build'"
   }
 }
