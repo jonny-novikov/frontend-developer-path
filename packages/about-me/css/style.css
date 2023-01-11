@@ -55,16 +55,16 @@ h3, .h3 {
     font-size: 16px;
 }
 
-.text-bold {
+.text-accent {
     font-weight: 900;
     display: block;
 }
 
-h1 .text-bold {
+h1 .text-accent {
     font-size: 80px;
 }
 
-h2 .text-bold {
+h2 .text-accent {
     font-size: 60px;
 }
 
@@ -98,7 +98,8 @@ a:focus {
 
 .btn-primary {
     color: var(--text-color-dark);
-    background-color: #8e9aaf;
+    /*background-color: #B4B4B4;*/
+    background-color: rgba(142, 154, 175, 0.75);
 }
 
 .btn-primary:hover,
@@ -131,6 +132,10 @@ a:focus {
     border: 8px #e1eff6 solid;
 }
 
+.mt-sm {
+    margin-top: 2rem;
+}
+
 .header {
     background-color: var(--bg-color-header);
     padding: 100px 20px;
@@ -142,7 +147,7 @@ a:focus {
 
 .header,
 .section {
-    padding: 100px 15px;
+    padding: 80px 15px;
 }
 
 .section p {
@@ -159,6 +164,12 @@ a:focus {
     background-color: var(--bg-color-section-about);
 }
 
+.bordered {
+    border-top: 1px #C4C4C4 solid;
+    border-bottom: 1px #C4C4C4 solid;
+    padding: 20px 0;
+}
+
 .section.section--projects {
     background-color: var(--bg-color-section-projects);
 }
@@ -172,4 +183,23 @@ a:focus {
     .container {
         width: 100%;
     }
+}
+
+.name,
+.text-accent,
+time {
+    color: #d56062;
+    font-weight: 900;
+}
+
+.text-accent {
+    display: block;
+}
+
+.h1 .text-accent {
+    font-size: 80px;
+}
+
+.h2 .text-accent {
+    font-size: 60px;
 }
