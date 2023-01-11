@@ -1,8 +1,29 @@
+:root {
+    --bg-color-body: #84bcda;
+    --bg-color-header: #84bcda;
+    --bg-color-section-about: #d1d2f9;
+    --bg-color-section-projects: #a3bcf9;
+    --text-color--primary: #252525;
+    --text-color--inverted: #F5F5F5;
+}
+
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
     font-weight: 300;
+    margin: 0;
+    color: var(--text-color--primary);
+    background-color: var(--bg-color-body);
+}
+
+body.dark-theme {
+    --bg-color-body: #252525;
+    --bg-color-header: #252525;
+    --bg-color-section-about: #F5F5F5;
+    --bg-color-section-projects: #252525;
+    --text-color--primary: #F5F5F5;
+    --text-color--inverted: #252525;
 }
 
 h1, .h1,
@@ -58,7 +79,7 @@ a:focus {
 }
 
 .header {
-    background-color: #84bcda;
+    background-color: var(--bg-color-header);
     padding: 100px 20px;
 }
 
@@ -66,16 +87,18 @@ a:focus {
     margin-top: 0;
 }
 
+.header,
 .section {
-    padding: 100px 20px;
+    padding: 100px 15px;
 }
 
 .section.section--about {
-    background-color: #d1d2f9;
+    color: var(--text-color--inverted);
+    background-color: var(--bg-color-section-about);
 }
 
 .section.section--projects {
-    background-color: #a3bcf9;
+    background-color: var(--bg-color-section-projects);
 }
 
 .container {
@@ -83,6 +106,8 @@ a:focus {
     margin: 0 auto;
 }
 
-/*
-
-*/
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
