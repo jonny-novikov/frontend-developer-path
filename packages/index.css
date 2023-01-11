@@ -15,12 +15,8 @@ body {
     background-color: #4E7367;
 }
 
-main {
-    /*
-    display: flex;
-    align-content: flex-start;
-    gap: 30px;
-    */
+.invisible {
+    visibility: hidden;
 }
 
 .projects-list {

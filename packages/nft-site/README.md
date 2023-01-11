@@ -1,4 +1,4 @@
-# Wizard Shop
+# NFT site
 
 Quick start:
 
