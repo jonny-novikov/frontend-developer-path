@@ -1,4 +1,4 @@
-# Wizard Shop
+# About me (CSS Challenges)
 
 Quick start:
 
