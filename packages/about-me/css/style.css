@@ -6,7 +6,8 @@
     --bg-color-section-projects: #a3bcf9;
     --text-color-dark: #252525;
     --text-color--primary: #252525;
-    --text-color--inverted: #F5F5F5; // whitesmoke
+    --text-color--inverted: #F5F5F5;
+    --text-color-section-about: --text-color--inverted;
 }
 
 body {
@@ -26,6 +27,7 @@ body.dark-theme {
     --bg-color-section-projects: #252525;
     --text-color--primary: #F5F5F5;
     --text-color--inverted: #252525;
+    --text-color-section-about: --text-color-dark;
 }
 
 h1, .h1,
@@ -130,6 +132,7 @@ a:focus {
     height: 200px;
     border-radius: 100px;
     border: 8px #e1eff6 solid;
+    margin: 4rem auto 0 auto;
 }
 
 .mt-sm {
@@ -151,12 +154,13 @@ a:focus {
 }
 
 .section p {
+    margin-top: 2rem;
     margin-bottom: 0;
     line-height: 1.75rem;
 }
 
 .section p.text-sm {
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 
 .section.section--about {
@@ -167,7 +171,7 @@ a:focus {
 .bordered {
     border-top: 1px #C4C4C4 solid;
     border-bottom: 1px #C4C4C4 solid;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .section.section--projects {
