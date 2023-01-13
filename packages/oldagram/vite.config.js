@@ -1,2 +1,2 @@
 import { useDefaultViteConfig } from '../packageConfig'
-export default useDefaultViteConfig('nft-site')
+export default useDefaultViteConfig('oldagram')

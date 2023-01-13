@@ -6,6 +6,7 @@
     "vite": "^4.0.4"
   },
   "scripts": {
+    "all/*": "run-z ./packages//",
     "start": "run-z ./packages start",
     "dev": "run-z ./packages dev",
     "build": "run-z build:packages,build:bundle",

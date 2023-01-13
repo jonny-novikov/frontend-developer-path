@@ -1,4 +1,5 @@
 :root {
+    --content-width: 375px;
     --p-1: 0.25rem;
     --p-2: 0.5rem;
     --p-3: 0.75rem;
@@ -19,7 +20,7 @@ body {
 
 .content {
     display: block;
-    width: 375px;
+    width: var(--content-width);
     margin: 0 auto;
 }
 
@@ -28,7 +29,7 @@ body {
 }
 
 .header, .posts {
-    border: 1px rgba(200,200,200,0.5) solid;
+    border: 1px rgba(220,220,220) solid;
 }
 
 .header {
@@ -62,17 +63,23 @@ body {
 .post {
     background-color: #ffffff;
     margin-bottom: 25px;
+    min-height: var(--content-width);
 }
 
 .post:last-child {
     margin-bottom: 0;
 }
 
-.post-content {
+.post-header {
     display: flex;
     flex-direction: row;
     justify-content: start;
     padding: var(--p-2);
+    height: 34px;
+}
+
+.post-content {
+    min-height: var(--content-width);
 }
 
 .post__user-info {
@@ -108,7 +115,7 @@ body {
     margin-bottom: var(--m-3);
 }
 
-.post .post__media {
+.post .post-content__img {
     width: 100%;
 }
 
