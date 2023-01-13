@@ -4,7 +4,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="assets/index.css" />
   </head>
   <body>
     <main>
@@ -39,5 +39,53 @@
         </li>
       </ul>
     </main>
+    <div class="modal" id="modal">
+      <div class="close-modal-btn-container">
+        <button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
+      </div>
+      <div class="modal-inner" id="modal-inner">
+        <h2>We ❤️ Your Data!</h2>
+        <p class="modal-text" id="modal-text">
+          We have a strict policy on tracking and spamming: we'll definitely
+          track you, and we'll definitely spam you. To use this site, enter your
+          name and email address and accept our ridiculous terms and conditions.
+        </p>
+        <form id="consent-form">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter your full name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <div class="modal-choice-btns" id="modal-choice-btns">
+            <button type="submit" class="modal-btn">Accept</button>
+            <button class="modal-btn" id="decline-btn">Decline</button>
+          </div>
+        </form>
+      </div>
+      <div id="get-out-of-here">
+        <div class="modal-inner-loading">
+          <img src="assets/images/loading.svg" class="loading" />
+          <p id="upload-text">Uploading your data to the dark web...</p>
+        </div>
+      </div>
+      <div id="thankyou-sucker">
+        <h2>
+          Thanks <span class="modal-display-name">${idiot}</span>, you are
+          sucker!
+        </h2>
+        <p>We just sold the rights to your eternal soul.</p>
+        <div class="idiot-gif">
+          <img src="assets/images/pirate.gif" />
+        </div>
+      </div>
+    </div>
+    <script src="assets/index.js" type="module"></script>
   </body>
 </html>
