@@ -1,7 +1,7 @@
-import { defineConfig } from "vite"
-import { resolve } from "path"
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
-const resolveDist = (path) => resolve(__dirname, "dist", path)
+const resolveDist = (path) => resolve(__dirname, "dist", path);
 
 export const useDefaultViteConfig = (pkgName) =>
   defineConfig({
@@ -10,4 +10,4 @@ export const useDefaultViteConfig = (pkgName) =>
       outDir: resolveDist(pkgName),
     },
     plugins: [],
-  })
+  });

@@ -1,2 +1,2 @@
 import { useDefaultViteConfig } from "../packageConfig";
-export default useDefaultViteConfig("hometown-page");
+export default useDefaultViteConfig("coworking-space");

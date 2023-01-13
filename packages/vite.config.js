@@ -1,8 +1,8 @@
-import { defineConfig } from "vite"
-import { resolve } from "path"
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
 const resolvePackage = (pkgName) =>
-  resolve(__dirname, `${pkgName}/dist/index.html`)
+  resolve(__dirname, `${pkgName}/dist/index.html`);
 
 export default defineConfig({
   build: {
@@ -14,4 +14,4 @@ export default defineConfig({
     },
   },
   plugins: [],
-})
+});
