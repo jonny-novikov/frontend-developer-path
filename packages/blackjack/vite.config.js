@@ -1,3 +1,3 @@
-import { useDefaultViteConfig } from "../packageConfig"
+import { useDefaultViteConfig } from "../packageConfig";
 
-export default useDefaultViteConfig("blackjack")
+export default useDefaultViteConfig("blackjack");

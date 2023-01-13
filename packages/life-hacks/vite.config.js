@@ -1,2 +1,2 @@
-import { useDefaultViteConfig } from "../packageConfig"
-export default useDefaultViteConfig("life-hacks")
+import { useDefaultViteConfig } from "../packageConfig";
+export default useDefaultViteConfig("life-hacks");

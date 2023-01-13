@@ -27,4 +27,4 @@ const posts = [
       "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
     likes: 152,
   },
-]
+];
