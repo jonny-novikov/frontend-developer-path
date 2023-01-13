@@ -1,0 +1,139 @@
+:root {
+  --content-width: 375px;
+  --p-1: 0.25rem;
+  --p-2: 0.5rem;
+  --p-3: 0.75rem;
+  --m-1: 0.25rem;
+  --m-2: 0.5rem;
+  --m-3: 0.75rem;
+  --m-4: 1rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.content {
+  display: block;
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.text-accent {
+  font-weight: 700;
+}
+
+.header,
+.posts {
+  border: 1px rgba(220, 220, 220) solid;
+}
+
+.header {
+  margin-top: 20px;
+  padding: var(--p-2);
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: var(--p-2);
+  height: 100%;
+}
+
+.user-avatar {
+  height: 34px;
+  width: 34px;
+  align-self: center;
+  border-radius: 17px;
+  border-width: 1px;
+  margin-right: var(--m-2);
+}
+
+.posts {
+  background-color: #ededed;
+  border-top: none;
+}
+
+.post {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  min-height: var(--content-width);
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: var(--p-2);
+  height: 34px;
+}
+
+.post-content {
+  min-height: var(--content-width);
+}
+
+.post__user-info {
+  font-size: 13px;
+  line-height: 1rem;
+}
+
+.post__user-avatar {
+  height: 34px;
+  width: 34px;
+  align-self: center;
+  border-radius: 17px;
+  margin-right: var(--m-2);
+}
+
+.post__user-name {
+  font-weight: 700;
+}
+
+.post__user-location {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.post-body {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--p-3);
+}
+
+.post-body div {
+  margin-bottom: var(--m-3);
+}
+
+.post .post-content__img {
+  width: 100%;
+}
+
+.post-body__icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-body__icons img {
+  height: 24px;
+  width: 24px;
+  margin-right: var(--m-2);
+  transition: 0.75s;
+}
+
+.post-body__icons img:hover {
+  transform: scale(1.2);
+  transition: 0.75s;
+}

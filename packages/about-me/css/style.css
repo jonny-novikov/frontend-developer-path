@@ -1,205 +1,216 @@
 :root {
-    --bg-color-dark: #252525;
-    --bg-color-body: #84bcda;
-    --bg-color-header: #84bcda;
-    --bg-color-section-about: #d1d2f9;
-    --bg-color-section-projects: #a3bcf9;
-    --text-color-dark: #252525;
-    --text-color--primary: #252525;
-    --text-color--inverted: #F5F5F5; // whitesmoke
+  --bg-color-dark: #252525;
+  --bg-color-body: #84bcda;
+  --bg-color-header: #84bcda;
+  --bg-color-section-about: #d1d2f9;
+  --bg-color-section-projects: #a3bcf9;
+  --text-color-dark: #252525;
+  --text-color--primary: #252525;
+  --text-color--inverted: #f5f5f5;
+  --text-color-section-about: --text-color--inverted;
 }
 
 body {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 21px;
-    font-weight: 300;
-    margin: 0;
-    color: var(--text-color--primary);
-    background-color: var(--bg-color-body);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  margin: 0;
+  color: var(--text-color--primary);
+  background-color: var(--bg-color-body);
 }
 
 body.dark-theme {
-    --bg-color-body: #252525;
-    --bg-color-header: #252525;
-    --bg-color-section-about: #F5F5F5;
-    --bg-color-section-projects: #252525;
-    --text-color--primary: #F5F5F5;
-    --text-color--inverted: #252525;
+  --bg-color-body: #252525;
+  --bg-color-header: #252525;
+  --bg-color-section-about: #f5f5f5;
+  --bg-color-section-projects: #252525;
+  --text-color--primary: #f5f5f5;
+  --text-color--inverted: #252525;
+  --text-color-section-about: --text-color-dark;
 }
 
-h1, .h1,
-h2, .h2 {
-    font-weight: 300;
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 300;
 }
 
-h1, .h1 {
-    font-size: 60px;
+h1,
+.h1 {
+  font-size: 60px;
 }
 
-h2, .h2 {
-    font-size: 42px;
+h2,
+.h2 {
+  font-size: 42px;
 }
 
-h3, .h3 {
-    font-size: 36px;
-    font-weight: 900;
+h3,
+.h3 {
+  font-size: 36px;
+  font-weight: 900;
 }
 
-.h2, .h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+.h2,
+.h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-sm {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .text-accent {
-    font-weight: 900;
-    display: block;
+  font-weight: 900;
+  display: block;
 }
 
 h1 .text-accent {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 h2 .text-accent {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 a {
-    color: #d56062;
-    font-weight: 900;
+  color: #d56062;
+  font-weight: 900;
 }
 
 a:hover,
 a:focus {
-    color: #f37748;
+  color: #f37748;
 }
 
-.btn, .btn:visited {
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
+.btn,
+.btn:visited {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-default {
-    color: var(--text-color-dark);
-    background-color: #99D930;
+  color: var(--text-color-dark);
+  background-color: #99d930;
 }
 
 .btn-default:hover {
-    background-color: var(--bg-color-dark);
-    color: #fff;
+  background-color: var(--bg-color-dark);
+  color: #fff;
 }
 
 .btn-primary {
-    color: var(--text-color-dark);
-    /*background-color: #B4B4B4;*/
-    background-color: rgba(142, 154, 175, 0.75);
+  color: var(--text-color-dark);
+  /*background-color: #B4B4B4;*/
+  background-color: rgba(142, 154, 175, 0.75);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    box-shadow: 0 2px 8px rgba(245, 245, 245, 0.5);
-    background-color: #d56062;
-    color: whitesmoke;
+  box-shadow: 0 2px 8px rgba(245, 245, 245, 0.5);
+  background-color: #d56062;
+  color: whitesmoke;
 }
 
 .btn-red {
-    background-color: #d56062;
-    color: whitesmoke;
+  background-color: #d56062;
+  color: whitesmoke;
 }
 
 .btn-red:hover {
-    color: #f37748;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 8px rgba(245, 245, 245, 0.5);
+  color: #f37748;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(245, 245, 245, 0.5);
 }
 
 .btn--more {
-    font-weight: 500;
-    margin-top: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 8px #e1eff6 solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 8px #e1eff6 solid;
+  margin: 4rem auto 0 auto;
 }
 
 .mt-sm {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .header {
-    background-color: var(--bg-color-header);
-    padding: 100px 20px;
+  background-color: var(--bg-color-header);
+  padding: 100px 20px;
 }
 
 .header .h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .header,
 .section {
-    padding: 80px 15px;
+  padding: 80px 15px;
 }
 
 .section p {
-    margin-bottom: 0;
-    line-height: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  line-height: 1.75rem;
 }
 
 .section p.text-sm {
-    margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 .section.section--about {
-    color: var(--text-color--inverted);
-    background-color: var(--bg-color-section-about);
+  color: var(--text-color--inverted);
+  background-color: var(--bg-color-section-about);
 }
 
 .bordered {
-    border-top: 1px #C4C4C4 solid;
-    border-bottom: 1px #C4C4C4 solid;
-    padding: 20px 0;
+  border-top: 1px #c4c4c4 solid;
+  border-bottom: 1px #c4c4c4 solid;
+  padding: 1.25rem 0;
 }
 
 .section.section--projects {
-    background-color: var(--bg-color-section-projects);
+  background-color: var(--bg-color-section-projects);
 }
 
 .container {
-    width: 570px;
-    margin: 0 auto;
+  width: 570px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 }
 
 .name,
 .text-accent,
 time {
-    color: #d56062;
-    font-weight: 900;
+  color: #d56062;
+  font-weight: 900;
 }
 
 .text-accent {
-    display: block;
+  display: block;
 }
 
 .h1 .text-accent {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 .h2 .text-accent {
-    font-size: 60px;
+  font-size: 60px;
 }

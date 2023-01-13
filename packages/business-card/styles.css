@@ -1,26 +1,26 @@
 body {
-    margin: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .avatar {
-    width: 150px;
-    border-bottom: 2px #d8cefe solid;
-    border-right: 2px #d8cefe solid;
+  width: 150px;
+  border-bottom: 2px #d8cefe solid;
+  border-right: 2px #d8cefe solid;
 }
 
 .card {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background: #ddebf8;
-    color: #2b2839;
-    border-bottom: 6px solid #d8cefe;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #ddebf8;
+  color: #2b2839;
+  border-bottom: 6px solid #d8cefe;
 }
 
 .border-blue {
-    border: 1px dotted blue;
+  border: 1px dotted blue;
 }

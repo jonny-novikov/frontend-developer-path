@@ -1,2 +1,2 @@
-import { useDefaultViteConfig } from '../packageConfig'
-export default useDefaultViteConfig('about-me')
+import { useDefaultViteConfig } from "../packageConfig"
+export default useDefaultViteConfig("about-me")

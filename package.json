@@ -1,11 +1,18 @@
 {
   "name": "project",
   "devDependencies": {
+    "eslint": "^8.31.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
+    "prettier-eslint-cli": "^7.1.0",
     "rimraf": "^3.0.2",
     "run-z": "^1.10.1",
     "vite": "^4.0.4"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "all/*": "run-z ./packages//",
     "start": "run-z ./packages start",
     "dev": "run-z ./packages dev",
     "build": "run-z build:packages,build:bundle",
@@ -13,7 +20,18 @@
     "build:bundle": "run-z ./packages build",
     "build:packages": "run-z --batch-parallel ./packages// build",
     "clean": "rimraf ./packages/dist",
+    "format": "prettier-eslint --write \"packages/**/*.{js,cjs,json,md}\"",
+    "lint": "run-z +z --then eslint ",
     "open:dist": "vite ./packages/dist",
-    "preview": "run-z ./packages preview"
+    "preview": "run-z ./packages preview",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ],
+    "packages/*/{src,types}/**/*.js": [
+      "eslint --cache --fix"
+    ]
   }
 }
