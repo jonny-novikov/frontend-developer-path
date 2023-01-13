@@ -1,2 +1,2 @@
-import { useDefaultViteConfig } from '../packageConfig'
-export default useDefaultViteConfig('lead-tracker')
+import { useDefaultViteConfig } from "../packageConfig"
+export default useDefaultViteConfig("lead-tracker")

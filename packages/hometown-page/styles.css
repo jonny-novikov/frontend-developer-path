@@ -7,147 +7,146 @@ LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557
 */
 :root {
-    /* CSS HEX */
-    --blue-yonder: #4c72a8ff;
-    --bone: #d5cabdff;
-    --glaucous: #607dadff;
-    --golden-brown: #9b642aff;
-    --black-coral: #58657fff;
+  /* CSS HEX */
+  --blue-yonder: #4c72a8ff;
+  --bone: #d5cabdff;
+  --glaucous: #607dadff;
+  --golden-brown: #9b642aff;
+  --black-coral: #58657fff;
 
-    /* CSS HSL */
-    --blue-yonder: hsla(215, 38%, 48%, 1);
-    --bone: hsla(32, 22%, 79%, 1);
-    --glaucous: hsla(217, 32%, 53%, 1);
-    --golden-brown: hsla(31, 57%, 39%, 1);
-    --black-coral: hsla(220, 18%, 42%, 1);
+  /* CSS HSL */
+  --blue-yonder: hsla(215, 38%, 48%, 1);
+  --bone: hsla(32, 22%, 79%, 1);
+  --glaucous: hsla(217, 32%, 53%, 1);
+  --golden-brown: hsla(31, 57%, 39%, 1);
+  --black-coral: hsla(220, 18%, 42%, 1);
 }
 
 body {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 img {
-    width: 100px;
+  width: 100px;
 }
 
 .bordered {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .page-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #hero-section {
-    background: url('images/tver-bg.jpg');
-    background-position: 50% 50%;
-    background-size: cover;
-    min-height: 400px;
-    width: 100%;
+  background: url("images/tver-bg.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10%;
-    color: whitesmoke;
-    text-shadow: 0.75px 0.75px 0.75px #fff, 1px 1px 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  color: whitesmoke;
+  text-shadow: 0.75px 0.75px 0.75px #fff, 1px 1px 10px #ccc;
 }
 
-
 #hero-section .hero-title {
-    background-color: rgba(155,100,42, 0.75);
-    padding: 5px 10px;
-    font-weight: 600;
+  background-color: rgba(155, 100, 42, 0.75);
+  padding: 5px 10px;
+  font-weight: 600;
 }
 
 #hero-section .hero-text {
-    background-color: #58657fda;
-    max-width: 600px;
-    line-height: 30px;
-    padding: 5px 10px;
-    margin-top: 0;
-    font-weight: 400;
+  background-color: #58657fda;
+  max-width: 600px;
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-top: 0;
+  font-weight: 400;
 }
 
 #activities-section {
-
 }
 
 #activities-section .h3 {
-    line-height: 60px;
+  line-height: 60px;
 }
 
 #guide-section {
-    display: block;
-    margin: 30px auto 30px auto;
-    background-color: wheat;
-    border-radius: 5px;
-    width: 500px;
-    background-color: #D5CABD;
+  display: block;
+  margin: 30px auto 30px auto;
+  background-color: wheat;
+  border-radius: 5px;
+  width: 500px;
+  background-color: #d5cabd;
 }
 
 .guide-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .guide-person {
-    padding: 15px;
+  padding: 15px;
 }
 
 .guide-avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
 }
 
 .guide-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px;
 }
 
 .guide-title .h3 {
-    margin: 10px;
+  margin: 10px;
 }
 
 .guide-title .text {
-    margin-top: 10px;
-    line-height: 20px;
+  margin-top: 10px;
+  line-height: 20px;
 }
 
 .guide-title .h4 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .cards {
-    display: flex;
+  display: flex;
 }
 
 .cards .card {
-    margin: 0;
+  margin: 0;
 }
 
 .cards .card img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .cards-row {
-    flex-direction: row;
-    justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card-content {
-    margin-top: 5px;
-    min-width: 200px;
+  margin-top: 5px;
+  min-width: 200px;
 }

@@ -1,63 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #4E7367;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4e7367;
 }
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .projects-list {
-    list-style: none;
-    padding-left: 10px;
+  list-style: none;
+  padding-left: 10px;
 }
 
 .projects-list .project-item {
-    margin-bottom: 25px;
-    font-size: 1.7rem;
+  margin-bottom: 25px;
+  font-size: 1.7rem;
 }
 
 .projects-list .project-item a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 5px 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 5px 10px;
 }
 
 .projects-list .project-item a:hover {
-    /* background-color: #5A537B; */
-    /* background-color: rgb(118,159,191); */
-    text-decoration: underline;
-    text-decoration-color: rgb(118,159,191);
+  /* background-color: #5A537B; */
+  /* background-color: rgb(118,159,191); */
+  text-decoration: underline;
+  text-decoration-color: rgb(118, 159, 191);
 }
 
 .bg-secondary {
-    background-color: rgb(118,159,191);
-    padding: 0 10px;
+  background-color: rgb(118, 159, 191);
+  padding: 0 10px;
 }
 
 .h1 {
-    color: rgb(43,40,57);
-    font-size: 88px;
-    text-shadow: 2px 2px 0 #fff;
-    font-family: Karla, Arial, sans-serif;
-    border-bottom: 4px whitesmoke solid;
+  color: rgb(43, 40, 57);
+  font-size: 88px;
+  text-shadow: 2px 2px 0 #fff;
+  font-family: Karla, Arial, sans-serif;
+  border-bottom: 4px whitesmoke solid;
 }
 
 .h2 {
-    color: rgb(43,40,57);
-    font-size: 36px;
-    font-family: Karla, Arial, sans-serif;
-    padding-left: 5px;
+  color: rgb(43, 40, 57);
+  font-size: 36px;
+  font-family: Karla, Arial, sans-serif;
+  padding-left: 5px;
 }

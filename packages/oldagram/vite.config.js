@@ -1,2 +1,2 @@
-import { useDefaultViteConfig } from '../packageConfig'
-export default useDefaultViteConfig('oldagram')
+import { useDefaultViteConfig } from "../packageConfig"
+export default useDefaultViteConfig("oldagram")
