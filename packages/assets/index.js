@@ -10,23 +10,16 @@ export function domReady(fn) {
 }
 
 function getOnYourBoots() {
-  const modal = document.getElementById("modal");
-  const modalCloseBtn = document.getElementById("modal-close-btn");
-  const consentForm = document.getElementById("consent-form");
-  const modalText = document.getElementById("modal-text");
-  const declineBtn = document.getElementById("decline-btn");
-  const modalChoiceBtns = document.getElementById("modal-choice-btns");
-  function getHtml(id) {
-    return document.getElementById(id).innerHTML;
+  function $(id) {
+    return document.getElementById(id);
   }
-
-  setTimeout(function () {
-    modal.style.display = "inline";
-  }, 1500);
-
-  modalCloseBtn.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
+  const overlay = $("overlay");
+  const modal = $("modal");
+  const modalCloseBtn = $("modal-close-btn");
+  const consentForm = $("consent-form");
+  const modalText = $("modal-text");
+  const declineBtn = $("decline-btn");
+  const modalChoiceBtns = $("modal-choice-btns");
 
   declineBtn.addEventListener("mouseenter", function () {
     modalChoiceBtns.classList.toggle("modal-choice-btns-reverse");
@@ -34,24 +27,33 @@ function getOnYourBoots() {
 
   consentForm.addEventListener("submit", function (e) {
     e.preventDefault();
-
     const consentFormData = new FormData(consentForm);
     const fullName = consentFormData.get("fullName");
-    modalText.innerHTML = getHtml("get-out-of-here");
+    modalText.innerHTML = $("get-out-of-here").innerHTML;
 
     setTimeout(function () {
-      document.getElementById("upload-text").innerText = `
+      $("upload-text").innerText = `
         Making the sale...`;
     }, 1500);
 
     setTimeout(function () {
-      const thanks = getHtml("thankyou-sucker");
-      document.getElementById("modal-inner").innerHTML = thanks.replace(
+      const thanks = $("thankyou-sucker").innerHTML;
+      $("modal-inner").innerHTML = thanks.replace(
         "${idiot}",
         fullName.toString(),
       );
       modalCloseBtn.disabled = false;
     }, 3000);
   });
+  function cookieConsent(hide) {
+    modal.style.display = overlay.style.display = hide ? "none" : "inline";
+    hide && localStorage.setItem("cookieConsent", "accept");
+  }
+  function thankYou() {
+    cookieConsent(true);
+  }
+  setTimeout(cookieConsent, 1500);
+  modalCloseBtn.addEventListener("click", thankYou);
+  $("love").addEventListener("click", thankYou);
 }
-domReady(getOnYourBoots);
+localStorage.getItem("cookieConsent") !== "accept" && domReady(getOnYourBoots);
