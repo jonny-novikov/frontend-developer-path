@@ -36,6 +36,7 @@ function highlightCheckedOption(e) {
     radio.classList.remove("highlight");
   }
   document.getElementById(e.target.id).parentElement.classList.add("highlight");
+  getImageBtn.disabled = false;
 }
 
 function getSingleCatObject() {

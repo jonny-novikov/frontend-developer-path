@@ -115,12 +115,16 @@ input[type="radio"] {
 
 .get-image-btn {
   background-color: #67595e;
-  color: #eed6d3;
+  color: whitesmoke;
   padding: 15px 19px;
   font-size: 24px;
   border: none;
   border-radius: 5px;
   margin-bottom: 8px;
+}
+
+.get-image-btn:disabled {
+  color: #eed6d3;
 }
 
 /* modal */
