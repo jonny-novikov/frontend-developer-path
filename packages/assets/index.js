@@ -1,4 +1,7 @@
-export function domReady(fn) {
+import { getElementById as $, render, Html, SvgLoader } from "./components";
+import { allProjects } from "./data";
+
+function domReady(fn) {
   if (typeof fn !== "function") {
     throw new Error("Argument passed to domReady should be a function");
   }
@@ -10,9 +13,6 @@ export function domReady(fn) {
 }
 
 function getOnYourBoots() {
-  function $(id) {
-    return document.getElementById(id);
-  }
   const overlay = $("overlay");
   const modal = $("modal");
   const modalCloseBtn = $("modal-close-btn");
@@ -56,4 +56,27 @@ function getOnYourBoots() {
   modalCloseBtn.addEventListener("click", thankYou);
   $("love").addEventListener("click", thankYou);
 }
-localStorage.getItem("cookieConsent") !== "accept" && domReady(getOnYourBoots);
+
+const Projects = (projects) => {
+  let projectsHtml = "";
+  projects.forEach((p) => {
+    if (p.hidden) {
+      return;
+    }
+    projectsHtml += `
+    <li class="project-item">
+        <a href="${p.package}/index.html">${p.name}</a>
+    </li>`;
+  });
+  return Html(projectsHtml);
+};
+
+const Loader = SvgLoader("circle-triple", "#F5F5F5CC");
+
+domReady(function () {
+  render(Loader, "projects-list");
+  setTimeout(() => {
+    render(Projects(allProjects), "projects-list");
+  }, 1000);
+  localStorage.getItem("cookieConsent") !== "accept" && getOnYourBoots();
+});
