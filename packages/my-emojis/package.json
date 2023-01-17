@@ -1,14 +1,14 @@
 {
-  "name": "project",
+  "name": "my-emojis",
+  "private": true,
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^2.0",
-    "babel-core": "^6.0",
-    "babel-loader": "^7.0",
-    "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "vite": "^4.0.4"
   },
   "scripts": {
-    "build": "echo 'Skip build'"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }

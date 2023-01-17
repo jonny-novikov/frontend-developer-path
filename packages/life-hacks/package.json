@@ -1,5 +1,6 @@
 {
-  "name": "project",
+  "name": "life-hacks",
+  "private": true,
   "dependencies": {},
   "devDependencies": {
     "vite": "^4.0.4"

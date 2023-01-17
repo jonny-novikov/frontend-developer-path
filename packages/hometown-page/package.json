@@ -1,8 +1,9 @@
 {
-  "name": "project",
+  "name": "hometown-page",
+  "private": true,
   "dependencies": {},
   "devDependencies": {
-    "vite": "latest"
+    "vite": "^4.0.4"
   },
   "scripts": {
     "start": "vite",
