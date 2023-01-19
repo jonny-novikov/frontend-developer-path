@@ -1,5 +1,9 @@
 export const allProjects = [
   {
+    name: "React Basics",
+    package: "react-basics",
+  },
+  {
     name: "Twimba",
     package: "twimba",
   },

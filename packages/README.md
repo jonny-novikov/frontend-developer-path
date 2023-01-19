@@ -7,16 +7,9 @@ $ pnpm install
 $ pnpm start
 ````
 
-## About Scrimba
+## Full Stack Developer Career Path
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-
-The Frontend Developer Career Path aims to teach you everything you need to work as Frontend Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [All courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
+[The Frontend Developer Career Path](https://scrimba.com/learn/frontend) couse at Scrimba aims to teach you everything you need to work as Frontend Developer. When you complete the course, you could take a deep-dive with advanced courses to become a Senior Full Stack Developer and to go Above and Beyond 🚀
 
 Happy Coding!
 

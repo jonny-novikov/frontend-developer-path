@@ -1,0 +1,13 @@
+{
+  "name": "react-basics",
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build --mode development",
+    "preview": "vite preview"
+  }
+}
