@@ -1,5 +1,7 @@
 {
-  "name": "scrimba-projects",
+  "name": "assets",
+  "private": true,
+  "dependencies": {},
   "devDependencies": {
     "vite": "^4.0.4",
     "vite-plugin-static-copy": "^0.13.0"
@@ -7,7 +9,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "pnpm install && vite build",
     "preview": "vite preview"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "name": "scrimba-projects",
+  "name": "project",
+  "dependencies": {},
   "devDependencies": {
-    "vite": "^4.0.4",
-    "vite-plugin-static-copy": "^0.13.0"
+    "vite": "latest"
   },
   "scripts": {
     "start": "vite",
