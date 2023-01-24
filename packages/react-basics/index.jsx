@@ -5,7 +5,7 @@ Try to write that 1-liner of React code again! This time,
 see if you can figure out how to render an <ul> with 2+ <li>s inside*/
 ReactDOM.render(
   <ul>
-    <li>"Think React"</li>
+    <li>"Think in React"</li>
     <li>Practice a lot</li>
   </ul>,
   document.getElementById("root"),
