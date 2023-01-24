@@ -1,5 +1,8 @@
 {
   "name": "frontend-developer-path",
+  "dependencies": {
+    "@vitejs/plugin-react": "^3.0.1"
+  },
   "devDependencies": {
     "eslint": "^8.31.0",
     "husky": "^8.0.3",

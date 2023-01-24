@@ -1,5 +1,13 @@
 export const allProjects = [
   {
+    name: "React Basics",
+    package: "react-basics",
+  },
+  {
+    name: "Scrimbafy",
+    package: "scrimbafy",
+  },
+  {
     name: "Twimba",
     package: "twimba",
   },

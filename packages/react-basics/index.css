@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  line-height: 1.5;
+}
