@@ -4,7 +4,6 @@ body {
 }
 
 /* typography */
-
 h1 {
   margin: 0 20px 0 0;
   padding: 20px;
@@ -35,12 +34,12 @@ a:active {
 a:focus {
 }
 
-/* 
+/*
 Challenge:
-1. Add an active state pseudo 
-   selector. Make it so that when a 
-   user clicks on the link, the color 
-   changes to a dark grey and the font 
+1. Add an active state pseudo
+   selector. Make it so that when a
+   user clicks on the link, the color
+   changes to a dark grey and the font
    weight increases to bold.
  */
 
