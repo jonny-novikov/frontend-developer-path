@@ -2,6 +2,7 @@ export const allProjects = [
   {
     name: "React Basics",
     package: "react-basics",
+    hidden: true,
   },
   {
     name: "Scrimbafy",
