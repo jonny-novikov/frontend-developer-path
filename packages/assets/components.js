@@ -2,11 +2,9 @@ export const getElementById = (id) => {
   return document.getElementById(id);
 };
 
-const $ = getElementById;
-
 export const render = (fn, id) => {
   const html = fn && fn(id).render();
-  return id ? ($(id).innerHTML = html) : html;
+  return id ? (getElementById(id).innerHTML = html) : html;
 };
 
 const Raw = (content) => ({

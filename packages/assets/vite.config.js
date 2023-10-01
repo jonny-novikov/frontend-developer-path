@@ -11,6 +11,10 @@ export default useDefaultViteConfig("assets", [
         src: normalizePath(path.resolve(__dirname, "./images/*")),
         dest: "images",
       },
+      {
+        src: normalizePath(path.resolve(__dirname, "./schemas/*")),
+        dest: "../schemas",
+      },
     ],
   }),
 ]);

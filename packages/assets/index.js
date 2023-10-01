@@ -1,4 +1,4 @@
-import { getElementById as $, render, Html, SvgLoader } from "./components";
+import { getElementById, render, Html, SvgLoader } from "./components";
 import { allProjects } from "./data";
 
 function domReady(fn) {
@@ -12,7 +12,8 @@ function domReady(fn) {
   }
 }
 
-function getOnYourBoots() {
+function getOnYourBoots($) {
+  $ = $ || getElementById;
   const overlay = $("overlay");
   const modal = $("modal");
   const modalCloseBtn = $("modal-close-btn");
@@ -78,5 +79,6 @@ domReady(function () {
   setTimeout(() => {
     render(Projects(allProjects), "projects-list");
   }, 1000);
-  localStorage.getItem("cookieConsent") !== "accept" && getOnYourBoots();
+  localStorage.getItem("cookieConsent") !== "accept" &&
+    getOnYourBoots(getElementById);
 });
